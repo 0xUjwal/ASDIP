@@ -6,6 +6,13 @@ An advanced security analysis platform that acts as an **AI Gateway**, **Data Sc
 
 ---
 
+## Video Demo
+
+Link to video demonstration:
+[Watch the demo](https://youtu.be/hAm08lOlX64)
+
+---
+
 ## Features
 
 - **Multi-Input Support** — Text, PDF, DOCX, TXT, LOG, SQL, and chat input
