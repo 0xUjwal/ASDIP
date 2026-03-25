@@ -1,4 +1,7 @@
 {
+  "env": {
+    "UV_LINK_MODE": "copy"
+  },
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": null,
