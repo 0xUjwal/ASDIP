@@ -1,13 +1,9 @@
 {
-  "env": {
-    "UV_LINK_MODE": "copy"
-  },
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": null,
   "functions": {
     "api/index.py": {
-      "runtime": "@vercel/python@4.1.0",
       "maxDuration": 30
     }
   },
