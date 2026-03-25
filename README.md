@@ -2,6 +2,8 @@
 
 An advanced security analysis platform that acts as an **AI Gateway**, **Data Scanner**, **Log Analyzer**, and **Risk Engine**. It ingests multi-source data (text, files, logs, SQL, chat), detects sensitive data and security risks, and generates AI-powered insights.
 
+**Live Demo:** [https://asdip-theta.vercel.app](https://asdip-theta.vercel.app)
+
 ---
 
 ## Features
@@ -164,54 +166,6 @@ python tests/test_risk_engine.py
 ```
 
 ---
-
-## Deploy to Vercel
-
-### Step 1 — Push to GitHub
-
-```bash
-cd AISDEP
-git init
-git add .
-git commit -m "Initial commit: AI Secure Data Intelligence Platform"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
-### Step 2 — Import into Vercel
-
-1. Go to [vercel.com/new](https://vercel.com/new)
-2. Click **Import Git Repository**
-3. Select your GitHub repo
-4. Vercel will auto-detect the config from `vercel.json`
-5. **No framework preset needed** — leave it as "Other"
-6. Click **Deploy**
-
-### Step 3 — Set Environment Variables (optional)
-
-In your Vercel project dashboard go to **Settings > Environment Variables** and add:
-
-| Variable | Value | Required |
-|----------|-------|----------|
-| `AI_PROVIDER` | `none`, `openai`, or `anthropic` | No (defaults to `none`) |
-| `OPENAI_API_KEY` | Your OpenAI key | Only if using OpenAI |
-| `ANTHROPIC_API_KEY` | Your Anthropic key | Only if using Anthropic |
-| `CORS_ORIGINS` | `https://your-app.vercel.app` | No (auto-handled) |
-
-### Step 4 — Done
-
-Your app will be live at `https://<your-project>.vercel.app`
-
-- Frontend is served as static files from `/`
-- Backend API runs as serverless functions at `/api/*`
-
-### Redeployments
-
-Every push to `main` triggers an automatic redeployment.
-
----
-
 ## API Reference
 
 ### `POST /api/analyze`
@@ -264,10 +218,6 @@ Health check endpoint.
 | Phone number | Low |
 
 ---
-
-## Domain
-
-Software Development — AI & Automation Testing
 
 ## License
 
